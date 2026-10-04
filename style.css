@@ -1,0 +1,249 @@
+/* =========================================================
+   Overall presentation
+   ========================================================= */
+
+.reveal {
+  font-size: 40px;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal p,
+.reveal li {
+  line-height: 1.35;
+}
+
+.reveal p {
+  margin-bottom: 0.55em;
+}
+
+
+/* =========================================================
+   Title slide
+   ========================================================= */
+
+.reveal #title-slide {
+  text-align: left;
+}
+
+.reveal #title-slide .title {
+  color: #1f5f3b;
+  font-size: 2.3em !important;
+  line-height: 1.08;
+  margin-bottom: 0.3em;
+}
+
+.reveal #title-slide .subtitle {
+  color: #555555;
+  font-size: 1.25em !important;
+  margin-top: 0.4em;
+  margin-bottom: 1em;
+}
+
+.reveal #title-slide .quarto-title-author-name {
+  font-size: 1em;
+  font-weight: 700;
+  color: #333333;
+}
+
+.reveal #title-slide .quarto-title-affiliation {
+  font-size: 0.75em;
+  color: #666666;
+}
+
+.reveal #title-slide .date {
+  font-size: 0.7em;
+  color: #777777;
+}
+
+
+/* =========================================================
+   Slide headings
+   ========================================================= */
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  text-transform: none;
+  font-weight: 700;
+}
+
+.reveal h1 {
+  color: #1f5f3b;
+  font-size: 1.9em;
+}
+
+.reveal h2 {
+  color: #1f5f3b;
+  font-size: 1.45em;
+  border-bottom: 3px solid #d6a928;
+  padding-bottom: 0.18em;
+  margin-bottom: 0.55em;
+}
+
+.reveal h3 {
+  color: #404040;
+  font-size: 1.05em;
+}
+
+
+/* =========================================================
+   Section divider slides
+   ========================================================= */
+
+.reveal .title-slide.level1 {
+  text-align: center;
+}
+
+.reveal .title-slide.level1 h1 {
+  color: #1f5f3b;
+  font-size: 2em;
+  border-bottom: 4px solid #d6a928;
+  display: inline-block;
+  padding-bottom: 0.2em;
+}
+
+
+/* =========================================================
+   Lists
+   ========================================================= */
+
+.reveal ul,
+.reveal ol {
+  margin-left: 1.15em;
+}
+
+.reveal li {
+  margin-top: 0.18em;
+  margin-bottom: 0.25em;
+}
+
+.reveal li::marker {
+  color: #1f5f3b;
+}
+
+
+/* =========================================================
+   Tables
+   ========================================================= */
+
+.reveal table {
+  font-size: 0.75em;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reveal table th {
+  background-color: #1f5f3b;
+  color: white;
+  font-weight: 700;
+}
+
+.reveal table td,
+.reveal table th {
+  padding: 0.4em 0.5em;
+  vertical-align: top;
+}
+
+
+/* =========================================================
+   Blockquotes
+   ========================================================= */
+
+.reveal blockquote {
+  width: 90%;
+  margin: 0.8em auto;
+  padding: 0.7em 1em;
+  border-left: 6px solid #d6a928;
+  background-color: #f7f8f4;
+  box-shadow: none;
+  font-style: normal;
+}
+
+
+/* =========================================================
+   Callouts
+   ========================================================= */
+
+.reveal .callout {
+  font-size: 0.82em;
+  border-radius: 8px;
+}
+
+
+/* =========================================================
+   Code
+   ========================================================= */
+
+.reveal pre {
+  width: 100%;
+  font-size: 0.6em;
+  line-height: 1.25;
+}
+
+
+/* =========================================================
+   Footer / slide number
+   ========================================================= */
+
+.reveal .footer {
+  font-size: 17px;
+  color: #666666;
+}
+
+.reveal .slide-number {
+  font-size: 16px;
+  background-color: transparent;
+  color: #666666;
+}
+
+
+/* =========================================================
+   Links
+   ========================================================= */
+
+.reveal a {
+  color: #237a57;
+}
+
+.reveal a:hover {
+  color: #174f39;
+}
+
+
+/* =========================================================
+   Progress bar
+   ========================================================= */
+
+.reveal .progress {
+  color: #1f5f3b;
+}
+
+
+/* =========================================================
+   Helpers
+   ========================================================= */
+
+.small {
+  font-size: 0.8em;
+}
+
+.smaller {
+  font-size: 0.7em;
+}
+
+.center {
+  text-align: center;
+}
+
+.muted {
+  color: #6c757d;
+}
+
+.highlight {
+  color: #1f5f3b;
+  font-weight: 700;
+}
