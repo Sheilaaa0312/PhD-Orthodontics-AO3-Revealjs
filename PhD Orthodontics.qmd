@@ -66,7 +66,7 @@ The broader consulting project contains five analytics objectives. My part is AO
 Each analytics objective addresses a different question in the prospective-patient journey.
 
 | AO | Core Question |
-|----|----|
+|------------------------------------|------------------------------------|
 | **AO1** | Can users move through the website easily and reach a consultation? |
 | **AO2** | Can prospective patients find the practice through search? |
 | **AO3** | Do prospective patients get the information they need to make a decision? |
@@ -378,7 +378,7 @@ This creates a consistent dataset so that website pages, competitors, reviews, s
 Each selected page can be evaluated using a consistent set of criteria.
 
 | Criterion | Main Question |
-|----|----|
+|------------------------------------|------------------------------------|
 | **Completeness** | Does the page address important patient questions? |
 | **Clarity** | Is the information understandable? |
 | **Credibility** | Are claims and provider information sufficiently supported? |
@@ -529,9 +529,5 @@ The final project report will use the team's required **AMA citation style** con
 
 ## Publication Links
 
-- **GitHub Repository:** *Add link after publishing*
-- **Published Revealjs Presentation:** *Add link after publishing*
-
-::: notes
-Replace these placeholders with clickable publication links after the presentation is pushed and published.
-:::
+- [**GitHub Repository**](https://github.com/Sheilaaa0312/PhD-Orthodontics-AO3-Revealjs)
+- [**Published Revealjs Presentation**](https://sheilaaa0312.github.io/PhD-Orthodontics-AO3-Revealjs/#/title-slide)
