@@ -1,0 +1,410 @@
+---
+title: "M06-Reflection Essay-Advanced Data Wrangling"
+author: "Xueying Luo"
+date: today
+
+format:
+  html:
+    toc: true
+    toc-depth: 4
+    toc-expand: 2
+    number-sections: true
+    code-link: true
+    code-fold: false
+    code-tools: true
+    code-overflow: wrap
+    embed-resources: true
+    theme: cosmo
+    smooth-scroll: true
+
+editor: visual
+
+execute:
+  freeze: auto
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(gt)
+```
+
+# Revealjs Presentation
+
+## Prompt
+
+> In Step 1, you learned how to design stunning presentation slides with Quarto. What's your impression of the Revealjs presentation? Describe its capabilities as you learned from the presentations. What are its strengths and weaknesses compared with PPT?
+
+## My Impression of Revealjs
+
+Before this module, I mainly thought about presentations in terms of PowerPoint. After watching the Revealjs examples and creating my own presentation, I realized that Quarto presentations work in a very different way. Instead of building each slide manually, Revealjs allows me to write the presentation in a `.qmd` file and control both the content and design through Markdown, YAML, R code, and CSS.
+
+My overall impression is that Revealjs is especially useful for data-driven and research-based presentations. It can combine explanation, code, tables, charts, citations, and presentation effects in the same source file. This makes the presentation more reproducible because the output can be updated directly from the code instead of copying results manually into slides.
+
+Some Revealjs features that stood out to me were:
+
+- incremental lists,
+- manual fragments,
+- columns,
+- speaker notes,
+- footnotes and asides,
+- slide transitions,
+- custom themes and CSS,
+- code display and code-copy tools,
+- reproducible R tables and charts,
+- table of contents navigation, and
+- web publishing.
+
+I also liked that Revealjs presentations can be opened directly in a browser and shared through a public web link. This makes the presentation easier to include in a portfolio or share with an audience.
+
+::: callout-note
+## Main Takeaway
+
+The biggest advantage of Revealjs for me is that it combines **presentation design and reproducible analysis in one workflow**.
+:::
+
+## Revealjs vs. PowerPoint
+
+Table below summarizes how I currently see the differences between Revealjs and PowerPoint.
+
+| Feature | Revealjs | PowerPoint |
+|------------------------|------------------------|------------------------|
+| **Editing style** | Code / Markdown based | Drag-and-drop visual editing |
+| **Reproducible analysis** | Strong; R code can generate tables and charts directly | Usually requires manually inserting updated results |
+| **Design flexibility** | Strong, but often requires YAML, CSS, or Sass | Easy for manual visual positioning |
+| **Learning curve** | Higher for beginners | Lower for most users |
+| **Web publishing** | Built into the workflow | Usually requires a separate sharing method |
+| **Code presentation** | Excellent for showing executable code and output | Limited |
+| **Exact object placement** | Can require more work | Very easy |
+| **Best use case** | Research, analytics, technical, and reproducible presentations | General business and highly visual presentations |
+
+Revealjs has several strengths compared with PowerPoint. First, it is much easier to keep analysis and presentation output connected. For example, if a dataset changes, I can rerun the code and update the result rather than manually replacing a chart or table. Second, it provides many useful presentation features such as fragments, speaker notes, code highlighting, and custom styles. Third, publishing the presentation as a website makes it easy to share.
+
+However, Revealjs also has weaknesses. I found the learning curve higher because I needed to understand YAML settings, Markdown structure, code chunks, and CSS. When something did not look right, I sometimes had to change the source code and render the presentation again. PowerPoint is still faster when I want to manually drag objects around or make very specific visual adjustments.
+
+For me, the main difference is that PowerPoint is easier for manual design, while Revealjs is stronger for reproducible and analytical presentations.[^1]
+
+[^1]: I would still choose PowerPoint for a presentation that depends heavily on custom visual positioning, but I would prefer Revealjs when the presentation needs to stay connected to code and analysis.
+
+# My Revealjs Project
+
+## Prompt
+
+> In Step 2, you were asked to create a Revealjs presentation. Provide a link to the presentation you published on the web. Add at least one reproducible chart or table in the presentation. Briefly describe what the presentation is about. What did you learn from the experience of the Revealjs presentation?
+
+## Published Presentation
+
+My Revealjs presentation is available here:
+
+- [Published Revealjs Presentation](https://sheilaaa0312.github.io/PhD-Orthodontics-AO3-Revealjs/)
+- [GitHub Repository](https://github.com/Sheilaaa0312/PhD-Orthodontics-AO3-Revealjs)
+
+## Presentation Topic
+
+My presentation focuses on my part of the MSDM Consulting Experience Project for **PhD Orthodontics**.
+
+My analytics objective is:
+
+> **AO3: Do prospective patients get the information they need to make a decision?**
+
+The presentation focuses on Content and Lead Generation Strategy. My main analytical approach is a Structured Content Gap Analysis.
+
+The presentation explains:
+
+- how AO3 fits with the other analytics objectives,
+- the business problem behind website content,
+- evidence from orthodontic information-quality research,
+- the data sources I plan to use,
+- the criteria for the content audit,
+- the planned analysis process, and
+- the expected content recommendations.
+
+The main purpose is to evaluate whether the website gives prospective patients enough clear, complete, credible, and decision-relevant information before they request a consultation.
+
+## Reproducible Table
+
+One requirement in Step 2 was to include at least one reproducible chart or table. I created a content-audit template directly in R.
+
+The table was not manually typed into the slide. Instead, the data were created with `tibble()` and displayed using `gt()`. This means that I can update the data later and regenerate the table automatically.
+
+The code below shows a simplified version of the same idea.
+
+```{r}
+#| label: tbl-content-audit
+#| tbl-cap: "Example of the Reproducible AO3 Content-Audit Table"
+#| echo: true
+
+content_audit <- tibble(
+  content_area = c(
+    "Treatment overview",
+    "Treatment suitability",
+    "Risks and limitations",
+    "Cost and payment",
+    "Retention and follow-up"
+  ),
+  website = rep("To audit", 5),
+  competitor_comparison = rep("Pending", 5),
+  review_search_evidence = rep("Pending", 5)
+)
+
+content_audit |>
+  gt() |>
+  cols_label(
+    content_area = "Content Area",
+    website = "PhD Website",
+    competitor_comparison = "Competitor Review",
+    review_search_evidence = "Reviews / Search Themes"
+  )
+```
+
+As shown in Table @tbl-content-audit, the table acts as a structure for organizing different content areas and evidence sources.
+
+::: callout-tip
+## Why This Matters
+
+The important part for me was understanding that reproducibility does not only apply to statistical analysis. It also applies to the way results and tables are communicated.
+:::
+
+## What I Learned
+
+Creating the presentation helped me understand Revealjs much better than only watching the examples.
+
+The first thing I learned was that the YAML header controls many important presentation settings. I used it to control the theme, slide size, transition, footer, slide numbers, table of contents, code display, and embedded resources.
+
+I also learned that presentation structure matters differently in Revealjs than in a regular HTML report. I had to shorten some of my content because long paragraphs made the slides too crowded. I started thinking more about what should appear on the slide and what should go into speaker notes.
+
+Another useful lesson was learning how CSS affects the presentation. My first version had text that was too small, so I adjusted the font sizes and styling in the CSS file. This helped me understand that Revealjs gives me a lot of design control, but I need to be more intentional with the formatting.
+
+I also learned how to use:
+
+::: panel-tabset
+### Structure
+
+- H1 headings for major presentation sections
+- H2 headings for individual slides
+- columns for side-by-side information
+- a table of contents for navigation
+
+### Presentation Effects
+
+- incremental lists
+- fragments
+- slide transitions
+- speaker notes
+
+### Reproducibility
+
+- R code chunks
+- generated `gt` tables
+- code-copy tools
+- automatic regeneration of output
+
+### Publishing
+
+- GitHub repository
+- GitHub Pages
+- web-based presentation sharing
+:::
+
+The most valuable part of the experience was seeing how one Quarto source file can combine the story, analysis, code, output, and design. I think this will be useful for future analytics projects because I can make changes in one place instead of updating the analysis and slides separately.
+
+# Advanced Data Wrangling
+
+## Prompt
+
+> My advanced wrangling lecture in Step 3 introduced new concepts, including how to join relational databases. Pick three different functions, each from a different category. Describe when to use them and give one coding example along with an output for each function. To clarify, you are expected to do literate programming to weave your narratives with the code.
+
+For this section, I selected three functions from three different categories:
+
+1.  `left_join()` — relational data and mutating joins
+2.  `across()` — column-wise operations
+3.  `case_when()` — conditional transformation
+
+The lecture separates these functions into different areas of advanced wrangling. Relational joins combine information from multiple tables, `across()` applies the same operation to multiple columns, and `case_when()` creates values based on multiple logical conditions.
+
+## `left_join()`
+
+### When to Use It
+
+`left_join()` belongs to the **mutating joins** category.
+
+I would use `left_join()` when I have one main data frame and want to add variables from another data frame using a matching key. A useful feature of `left_join()` is that it keeps all rows from the first data frame, even if some rows do not have a match in the second table.
+
+The lecture describes mutating joins as joins that match observations by their keys and then copy variables from one table to another. It also emphasizes that `left_join()` is commonly used when looking up additional information because it preserves the observations in the original data.
+
+### Example
+
+Suppose I have one table containing patient inquiries and another table containing source descriptions.
+
+```{r}
+#| label: tbl-left-join
+#| tbl-cap: "Example Output from left_join()"
+
+inquiries <- tibble(
+  inquiry_id = c(101, 102, 103, 104),
+  source_code = c("G", "Y", "G", "D")
+)
+
+sources <- tibble(
+  source_code = c("G", "Y", "D"),
+  source_name = c(
+    "Google",
+    "Yelp",
+    "Direct Website"
+  )
+)
+
+joined_inquiries <- inquiries |>
+  left_join(sources, by = "source_code")
+
+joined_inquiries
+```
+
+In this example, `source_code` acts as the key connecting the two tables. The original inquiry records are preserved, and `source_name` is added from the second table.
+
+This is useful because I can keep the original observation-level data while attaching additional descriptive information.
+
+::: callout-note
+## What I Learned
+
+The most important idea for me is that joins are not just about combining tables. I also need to understand the **key** that connects them and whether that key is unique.
+:::
+
+## `across()`
+
+### When to Use It
+
+`across()` belongs to the **column-wise operations** category.
+
+I would use `across()` when I want to apply the same function to several columns without repeating almost identical code.
+
+The lecture explains that manually copying and pasting the same operation for multiple variables can be tedious and error-prone. `across()` provides a shorter and more transparent way to apply a function across selected columns. It is usually used inside another function such as `summarize()` or `mutate()`.
+
+For example, the lecture shows that instead of separately calculating means for multiple variables, `summarize(across(...))` can apply the same summary function to all selected variables.
+
+### Example
+
+Suppose I have three page-performance variables and want to calculate their averages.
+
+```{r}
+#| label: tbl-across
+#| tbl-cap: "Example Output from across()"
+
+page_metrics <- tibble(
+  page_views = c(120, 180, 150, 200),
+  time_seconds = c(55, 72, 61, 80),
+  scroll_percent = c(60, 78, 69, 85)
+)
+
+metric_summary <- page_metrics |>
+  summarize(
+    across(
+      everything(),
+      mean
+    )
+  )
+
+metric_summary
+```
+
+Using `across()` means that I do not need to write:
+
+``` r
+summarize(
+  page_views = mean(page_views),
+  time_seconds = mean(time_seconds),
+  scroll_percent = mean(scroll_percent)
+)
+```
+
+The shorter version is easier to maintain, especially when a dataset contains many similar variables.
+
+I also learned that `across()` can select columns using tidy-selection helpers such as `where(is.numeric)` and can apply more than one function at the same time. The lecture demonstrates this with multiple summary functions such as minimum, maximum, and mean.
+
+::: callout-tip
+## Why I Would Use It
+
+For marketing analytics, I can imagine using `across()` to summarize several numeric engagement variables at once instead of writing the same code repeatedly.
+:::
+
+## `case_when()`
+
+### When to Use It
+
+`case_when()` belongs to the **conditional transformation** category.
+
+I would use `case_when()` when I need to create a new variable based on several logical conditions.
+
+The lecture introduces it as a way to replace more complicated `if`/`else` logic. It also emphasizes that the conditions are evaluated in order, so more specific conditions should come before more general ones.
+
+The lecture also shows that `case_when()` is especially useful inside `mutate()` when a new variable depends on a combination of existing values.
+
+### Example
+
+Suppose I want to classify website engagement according to time spent on a page.
+
+```{r}
+#| label: tbl-case-when
+#| tbl-cap: "Example Output from case_when()"
+
+engagement <- tibble(
+  visitor = c("A", "B", "C", "D", "E"),
+  time_seconds = c(20, 45, 75, 120, 35)
+)
+
+engagement_classified <- engagement |>
+  mutate(
+    engagement_level = case_when(
+      time_seconds >= 90 ~ "High",
+      time_seconds >= 45 ~ "Medium",
+      TRUE ~ "Low"
+    )
+  )
+
+engagement_classified
+```
+
+Here, the conditions are written from the most specific to the most general.
+
+A visitor with 120 seconds is classified as `"High"` before R checks the more general 45-second condition. The final `TRUE ~ "Low"` acts as the default category for observations that do not meet the earlier conditions.
+
+This helped me understand why **order matters** in `case_when()`. If I put the broader condition first, some observations could be classified incorrectly.
+
+## Comparing the Three Functions
+
+Table below summarizes the different purposes of the three functions.
+
+| Function | Category | Main Purpose | When I Would Use It |
+|------------------|------------------|------------------|------------------|
+| `left_join()` | Relational data / mutating joins | Add variables from another table using a key | Combining inquiry data with source, campaign, or customer information |
+| `across()` | Column-wise operations | Apply one or more functions to multiple columns | Summarizing several numeric marketing variables |
+| `case_when()` | Conditional transformation | Create values from multiple logical conditions | Creating categories such as engagement or performance levels |
+
+# Overall Reflection
+
+This module helped me see that Quarto is not only a tool for writing reports. It can also connect analysis, presentation, documentation, and publishing.
+
+The Revealjs activity showed me how code can become part of a professional presentation rather than something separate from it. I also learned that presentation design in Quarto requires both technical and communication decisions. I had to think about font size, slide density, visual structure, reproducibility, and what the audience actually needs to see.
+
+The advanced wrangling lecture also helped me understand that data preparation becomes more important as projects become more complex. Functions such as `left_join()`, `across()`, and `case_when()` solve different types of problems:
+
+- `left_join()` helps connect related datasets,
+- `across()` reduces repetitive code across columns, and
+- `case_when()` makes complex recoding easier to read.
+
+::: callout-important
+## Final Takeaway
+
+My biggest takeaway from M06 is that a good analytical workflow is not only about getting the correct result. It is also about making the work reproducible, organized, readable, and easy to communicate to an audience.
+:::
+
+# Appendix
+
+## Publication Links
+
+- [Revealjs Presentation](https://sheilaaa0312.github.io/PhD-Orthodontics-AO3-Revealjs/)
+- [Revealjs GitHub Repository](https://github.com/Sheilaaa0312/PhD-Orthodontics-AO3-Revealjs)
