@@ -49,12 +49,12 @@ library(gt)
 
 ## Project Background
 
-- PhD Orthodontics is the client for our **MSDM Consulting Experience Project**.
+- PhD Orthodontics is the client for our MSDM Consulting Experience Project.
 - The full project covers website experience, SEO, content, paid search, and consumer insights.
-- My focus is **AO3: Content and Lead Generation Strategy**.
+- My focus is AO3: Content and Lead Generation Strategy.
 
 ::: {.fragment .fade-up}
-> **AO3 asks:** Do prospective patients get the information they need to make a decision?
+> AO3 asks: Do prospective patients get the information they need to make a decision?
 :::
 
 ::: notes
@@ -66,24 +66,24 @@ This is the audience-friendly version of AO3. The formal objective is to identif
 Each analytics objective addresses a different question in the prospective-patient journey.
 
 | AO | Core Question |
-|----|----|
-| **AO1** | Can users move through the website easily and reach a consultation? |
-| **AO2** | Can prospective patients find the practice through search? |
-| **AO3** | Do prospective patients get the information they need to make a decision? |
-| **AO4** | Which paid-search patterns generate more efficient qualified inquiries? |
-| **AO5** | Why do certain messages influence trust and consultation intention? |
+|------------------------------------|------------------------------------|
+| AO1 | Can users move through the website easily and reach a consultation? |
+| AO2 | Can prospective patients find the practice through search? |
+| AO3 | Do prospective patients get the information they need to make a decision? |
+| AO4 | Which paid-search patterns generate more efficient qualified inquiries? |
+| AO5 | Why do certain messages influence trust and consultation intention? |
 
 ::: callout-note
 ## AO3 Boundary
 
-AO3 focuses on **what information the website provides**, rather than usability, SEO visibility, paid-search efficiency, or experimental consumer-response effects.
+AO3 focuses on what information the website provides, rather than usability, SEO visibility, paid-search efficiency, or experimental consumer-response effects.
 :::
 
 ## Business Problem
 
 Prospective patients may use an orthodontic website to understand treatments, evaluate the provider, and decide whether to contact the practice.
 
-> **Does the current website provide the information prospective patients may need to understand treatment options and make a decision before contacting PhD Orthodontics?**
+> Does the current website provide the information prospective patients may need to understand treatment options and make a decision before contacting PhD Orthodontics?
 
 A content gap may involve information that is:
 
@@ -100,26 +100,26 @@ A content gap may involve information that is:
 
 ### Formal AO3
 
-> **Identify and prioritize gaps between the information prospective patients may need to understand treatment options and make a decision before contacting PhD Orthodontics and the information currently provided on the website.**
+> Identify and prioritize gaps between the information prospective patients may need to understand treatment options and make a decision before contacting PhD Orthodontics and the information currently provided on the website.
 
 ### Plain-Language Question
 
-> **Do prospective patients get the information they need to make a decision?**
+> Do prospective patients get the information they need to make a decision?
 
 ## What AO3 Will Evaluate
 
 The content audit will examine six main criteria:
 
 ::: incremental
-1.  **Presence of important information**
-2.  **Completeness and depth**
-3.  **Clarity and readability**
-4.  **Accuracy and reliability**
-5.  **Consistency across related pages**
-6.  **Balance of relevant treatment information**
+1.  Presence of important information
+2.  Completeness and depth
+3.  Clarity and readability
+4.  Accuracy and reliability
+5.  Consistency across related pages
+6.  Balance of relevant treatment information
 :::
 
-The goal is to determine which information should be **clarified, expanded, updated, or created**.
+The goal is to determine which information should be clarified, expanded, updated, or created.
 
 ## Current Scope
 
@@ -145,7 +145,7 @@ The goal is to determine which information should be **clarified, expanded, upda
 :::
 :::::
 
-**San Gabriel is the primary current focus; Chino Hills is treated as a future location-specific content opportunity as planning develops.**
+San Gabriel is the primary current focus; Chino Hills is treated as a future location-specific content opportunity as planning develops.
 
 ## Why AO3 Matters
 
@@ -176,7 +176,7 @@ Website content can help prospective patients do two important things.
 :::::
 
 ::: {.fragment .fade-up}
-**The goal is not simply to add more content. It is to provide the right information clearly and sufficiently.**
+The goal is not simply to add more content. It is to provide the right information clearly and sufficiently.
 :::
 
 # Literature Review
@@ -186,13 +186,13 @@ Website content can help prospective patients do two important things.
 Previous orthodontic research suggests that online information may have quality and readability limitations.
 
 ::: incremental
-- **Meade, Poirier, and Jensen (2024):** online orthodontic information was often low to moderate in quality and difficult to read.
-- **Meade and Dreyer (2022):** dental-practice websites showed information-quality and readability problems.
-- **Ferlias et al. (2023):** U.S. orthodontic websites showed gaps in areas such as relapse-risk and retention information.
+- Meade, Poirier, and Jensen (2024): online orthodontic information was often low to moderate in quality and difficult to read.
+- Meade and Dreyer (2022): dental-practice websites showed information-quality and readability problems.
+- Ferlias et al. (2023): U.S. orthodontic websites showed gaps in areas such as relapse-risk and retention information.
 :::
 
 ::: {.fragment .fade-up}
-> Having information on a page does not necessarily mean that it is **complete, understandable, reliable, consistent, or sufficiently balanced**.
+> Having information on a page does not necessarily mean that it is complete, understandable, reliable, consistent, or sufficiently balanced.
 :::
 
 ## Supporting Evidence
@@ -218,9 +218,9 @@ The Content Gap Analysis will be supported by research on:
 ::: callout-note
 ## Role of Theory
 
-Supporting concepts such as signaling and credibility can help explain **why certain information may matter**, but they do not organize AO3.
+Supporting concepts such as signaling and credibility can help explain why certain information may matter, but they do not organize AO3.
 
-**Primary analytical framework: Content Gap Analysis**
+Primary analytical framework: Content Gap Analysis
 :::
 
 ::: notes
@@ -229,7 +229,7 @@ Earlier versions of AO3 included several theoretical models. Based on faculty fe
 
 ## Adequacy of Existing Information
 
-Existing evidence is adequate for defining **what should be examined**, but it cannot determine the specific content priorities for PhD Orthodontics by itself.
+Existing evidence is adequate for defining what should be examined, but it cannot determine the specific content priorities for PhD Orthodontics by itself.
 
 Current evidence includes:
 
@@ -280,7 +280,7 @@ This distinction follows faculty feedback to separate information that can be ge
 
 The basic analytical process is:
 
-**Patient information need → Current website content → Gap or weakness → Priority → Content recommendation**
+Patient information need → Current website content → Gap or weakness → Priority → Content recommendation
 
 ```{mermaid}
 flowchart LR
@@ -322,7 +322,7 @@ Competitor websites are benchmarks rather than automatic examples of best practi
 ::: callout-note
 ## Role of Performance Data
 
-GA4, Google Search Console, and validated aggregate inquiry data may help **prioritize pages or topics**, but they will **not** be treated as direct measures of content quality or patient information needs.
+GA4, Google Search Console, and validated aggregate inquiry data may help prioritize pages or topics, but they will not be treated as direct measures of content quality or patient information needs.
 :::
 
 ## Data Preparation
@@ -332,7 +332,7 @@ The collected information will be organized into a consistent structure before c
 ::::::::::::: columns
 :::: {.column width="20%"}
 ::: process-step
-**1. Inventory**
+1\. Inventory
 
 List major pages.
 :::
@@ -340,7 +340,7 @@ List major pages.
 
 :::: {.column width="20%"}
 ::: process-step
-**2. Classify**
+2\. Classify
 
 Group content topics.
 :::
@@ -348,7 +348,7 @@ Group content topics.
 
 :::: {.column width="20%"}
 ::: process-step
-**3. Code**
+3\. Code
 
 Apply audit criteria.
 :::
@@ -356,7 +356,7 @@ Apply audit criteria.
 
 :::: {.column width="20%"}
 ::: process-step
-**4. Compare**
+4\. Compare
 
 Review evidence sources.
 :::
@@ -364,7 +364,7 @@ Review evidence sources.
 
 :::: {.column width="20%"}
 ::: process-step
-**5. Prioritize**
+5\. Prioritize
 
 Rank content gaps.
 :::
@@ -376,13 +376,13 @@ Rank content gaps.
 Each selected page will be coded using a consistent set of criteria.
 
 | Criterion | Main Question |
-|----|----|
-| **Presence** | Is important information provided? |
-| **Completeness / depth** | Is enough detail provided to answer an important patient question? |
-| **Clarity / readability** | Is the information understandable to a prospective patient? |
-| **Accuracy / reliability** | Is the information appropriately supported and reliable? |
-| **Consistency** | Is related information consistent across website pages? |
-| **Balance** | Are relevant benefits, limitations, risks, or alternatives presented where appropriate? |
+|------------------------------------|------------------------------------|
+| Presence | Is important information provided? |
+| Completeness / depth | Is enough detail provided to answer an important patient question? |
+| Clarity / readability | Is the information understandable to a prospective patient? |
+| Accuracy / reliability | Is the information appropriately supported and reliable? |
+| Consistency | Is related information consistent across website pages? |
+| Balance | Are relevant benefits, limitations, risks, or alternatives presented where appropriate? |
 
 Possible content topics include treatment suitability, process and duration, benefits and limitations, risks and alternatives, retention or follow-up, cost or insurance, and provider qualifications.
 
@@ -499,14 +499,14 @@ The final analysis should identify two broad types of opportunities:
 :::
 :::::
 
-Recommendations will be prioritized using **patterns across multiple sources**, rather than any single competitor, review, or study.
+Recommendations will be prioritized using patterns across multiple sources, rather than any single competitor, review, or study.
 
 # Key Takeaways
 
 ::: callout-important
 ## AO3 Direction
 
-**Primary analytical framework: Content Gap Analysis**
+Primary analytical framework: Content Gap Analysis
 :::
 
 ::: incremental
@@ -536,7 +536,5 @@ The group CEP report uses the shared bibliography and the team's required citati
 
 # Appendix
 
-## Publication Links
-
-- [**GitHub Repository**](https://github.com/Sheilaaa0312/PhD-Orthodontics-AO3-Revealjs)
-- [**Published Revealjs Presentation**](https://sheilaaa0312.github.io/PhD-Orthodontics-AO3-Revealjs/#/title-slide)
+- [GitHub Repository](https://github.com/Sheilaaa0312/PhD-Orthodontics-AO3-Revealjs)
+- [Published Revealjs Presentation](https://sheilaaa0312.github.io/PhD-Orthodontics-AO3-Revealjs/#/title-slide)

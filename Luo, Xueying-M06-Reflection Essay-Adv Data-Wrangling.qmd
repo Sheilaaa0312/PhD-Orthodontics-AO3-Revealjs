@@ -37,13 +37,13 @@ library(gt)
 
 ## Prompt
 
-> **In Step 1, you learned how to design stunning presentation slides with Quarto. What's your impression of the Revealjs presentation? Describe its capabilities as you learned from the presentations. What are its strengths and weaknesses compared with PPT?**
+> In Step 1, you learned how to design stunning presentation slides with Quarto. What's your impression of the Revealjs presentation? Describe its capabilities as you learned from the presentations. What are its strengths and weaknesses compared with PPT?
 
 ## My Impression of Revealjs
 
 Before this module, I mainly thought about presentations in terms of PowerPoint. After watching the Revealjs examples and creating my own presentation, I realized that Quarto presentations work in a very different way. Instead of building each slide manually, Revealjs allows me to write the presentation in a `.qmd` file and control both the content and design through Markdown, YAML, R code, and CSS.
 
-My overall impression is that Revealjs is especially useful for **data-driven and research-based presentations**. It can combine explanation, code, tables, charts, citations, and presentation effects in the same source file. This makes the presentation more reproducible because the output can be updated directly from the code instead of copying results manually into slides.
+My overall impression is that Revealjs is especially useful for data-driven and research-based presentations. It can combine explanation, code, tables, charts, citations, and presentation effects in the same source file. This makes the presentation more reproducible because the output can be updated directly from the code instead of copying results manually into slides.
 
 Some Revealjs features that stood out to me were:
 
@@ -64,31 +64,29 @@ I also liked that Revealjs presentations can be opened directly in a browser and
 ::: callout-note
 ## Main Takeaway
 
-The biggest advantage of Revealjs for me is that it combines **presentation design and reproducible analysis in one workflow**.
+The biggest advantage of Revealjs for me is that it combines presentation design and reproducible analysis in one workflow.
 :::
 
 ## Revealjs vs. PowerPoint
 
-Table @tbl-comparison summarizes how I currently see the differences between Revealjs and PowerPoint.
+Table below summarizes how I currently see the differences between Revealjs and PowerPoint.
 
 | Feature | Revealjs | PowerPoint |
-|------------------------|------------------------|------------------------|
-| **Editing style** | Code / Markdown based | Drag-and-drop visual editing |
-| **Reproducible analysis** | R code can generate tables and charts directly | Updated results usually need to be inserted manually |
-| **Design flexibility** | Strong, but often requires YAML, CSS, or Sass | Easy for manual visual positioning |
-| **Learning curve** | Higher for beginners | Lower for most users |
-| **Web publishing** | Built into the workflow | Usually requires a separate sharing method |
-| **Code presentation** | Excellent for executable code and output | Limited |
-| **Exact object placement** | Can require more work | Very easy |
-| **Best use case** | Research, analytics, technical, reproducible presentations | General business and highly visual presentations |
-
-: Revealjs and PowerPoint Comparison
+|----|----|----|
+| Editing style | Code / Markdown based | Drag-and-drop visual editing |
+| Reproducible analysis | R code can generate tables and charts directly | Updated results usually need to be inserted manually |
+| Design flexibility | Strong, but often requires YAML, CSS, or Sass | Easy for manual visual positioning |
+| Learning curve | Higher for beginners | Lower for most users |
+| Web publishing | Built into the workflow | Usually requires a separate sharing method |
+| Code presentation | Excellent for executable code and output | Limited |
+| Exact object placement | Can require more work | Very easy |
+| Best use case | Research, analytics, technical, reproducible presentations | General business and highly visual presentations |
 
 Revealjs has several strengths compared with PowerPoint. First, it is easier to keep analysis and presentation output connected. If a dataset changes, I can rerun the code and update the output instead of manually replacing a chart or table. Second, Revealjs provides useful presentation features such as fragments, speaker notes, code display, and custom styles. Third, publishing the presentation as a website makes it easy to share.
 
 However, Revealjs also has weaknesses. I found the learning curve higher because I needed to understand YAML settings, Markdown structure, code chunks, and CSS. When something did not look right, I sometimes had to change the source code and render again. PowerPoint is still faster when I want to drag objects around or make very specific visual adjustments.
 
-For me, the main difference is that **PowerPoint is easier for manual design, while Revealjs is stronger for reproducible and analytical presentations**.[^1]
+For me, the main difference is that PowerPoint is easier for manual design, while Revealjs is stronger for reproducible and analytical presentations.[^1]
 
 [^1]: I would still choose PowerPoint for a presentation that depends heavily on custom visual positioning, but I would prefer Revealjs when the presentation needs to stay connected to code and analysis.
 
@@ -96,7 +94,7 @@ For me, the main difference is that **PowerPoint is easier for manual design, wh
 
 ## Prompt
 
-> **In Step 2, you were asked to create a Revealjs presentation. Provide a link to the presentation you published on the web. Add at least one reproducible chart or table in the presentation. Briefly describe what the presentation is about. What did you learn from the experience of the Revealjs presentation?**
+> In Step 2, you were asked to create a Revealjs presentation. Provide a link to the presentation you published on the web. Add at least one reproducible chart or table in the presentation. Briefly describe what the presentation is about. What did you learn from the experience of the Revealjs presentation?
 
 ## Published Presentation
 
@@ -107,15 +105,15 @@ My Revealjs presentation is available here:
 
 ## Presentation Topic
 
-My presentation focuses on my part of the MSDM Consulting Experience Project for **PhD Orthodontics**.
+My presentation focuses on my part of the MSDM Consulting Experience Project for PhD Orthodontics.
 
 For the presentation, I summarized my analytics objective for the audience as:
 
-> **AO3: Do prospective patients get the information they need to make a decision?**
+> AO3: Do prospective patients get the information they need to make a decision?
 
-The formal objective is to **identify and prioritize gaps between the information prospective patients may need to understand treatment options and make a decision before contacting PhD Orthodontics and the information currently provided on the website**.
+The formal objective is to identify and prioritize gaps between the information prospective patients may need to understand treatment options and make a decision before contacting PhD Orthodontics and the information currently provided on the website.
 
-My primary analytical framework is a **Structured Content Gap Analysis**.
+My primary analytical framework is a Structured Content Gap Analysis.
 
 The presentation explains:
 
@@ -127,13 +125,13 @@ The presentation explains:
 - the planned content-gap analysis process, and
 - the types of content recommendations the analysis may produce.
 
-The main purpose is to determine whether the website provides the information prospective patients may need before contacting the practice and to identify content that is **missing, incomplete, unclear, inconsistent, difficult to locate, or not sufficiently developed**.
+The main purpose is to determine whether the website provides the information prospective patients may need before contacting the practice and to identify content that is missing, incomplete, unclear, inconsistent, difficult to locate, or not sufficiently developed.
 
 San Gabriel is the primary current focus, while Chino Hills is treated as a future location-specific content opportunity.
 
 ## Reproducible Table
 
-One requirement in Step 2 was to include at least one reproducible chart or table. I created an **illustrative content-area tracking table** directly in R to show how evidence for the planned Content Gap Analysis can be organized.
+One requirement in Step 2 was to include at least one reproducible chart or table. I created an illustrative content-area tracking table directly in R to show how evidence for the planned Content Gap Analysis can be organized.
 
 The table was not manually typed into the slide. The data were created using `tibble()` and displayed using `gt()`. This means I can update the values later and regenerate the table automatically.
 
@@ -186,7 +184,7 @@ The important lesson for me was that reproducibility does not only apply to stat
 
 Creating the presentation helped me understand Revealjs much better than only watching examples.
 
-The first thing I learned was that the **YAML header controls many important presentation settings**. I used it to control the theme, slide size, transition, footer, slide numbers, table of contents, code display, and embedded resources.
+The first thing I learned was that the YAML header controls many important presentation settings. I used it to control the theme, slide size, transition, footer, slide numbers, table of contents, code display, and embedded resources.
 
 I also learned that presentation structure works differently in Revealjs than in a regular HTML report. I had to shorten some content because long paragraphs made the slides too crowded. I started thinking more carefully about what should appear on a slide and what could be moved to speaker notes.
 
@@ -223,13 +221,13 @@ I also learned how to use:
 - web-based presentation sharing
 :::
 
-The most valuable part of the experience was seeing how **one Quarto source file can combine the story, analysis, code, output, and design**. I think this will be useful for future analytics projects because I can make changes in one place instead of updating the analysis and presentation separately.
+The most valuable part of the experience was seeing how one Quarto source file can combine the story, analysis, code, output, and design. I think this will be useful for future analytics projects because I can make changes in one place instead of updating the analysis and presentation separately.
 
 # Advanced Data Wrangling
 
 ## Prompt
 
-> **My advanced wrangling lecture in Step 3 introduced new concepts, including how to join relational databases. Pick three different functions, each from a different category. Describe when to use them and give one coding example along with an output for each function. To clarify, you are expected to do literate programming to weave your narratives with the code.**
+> My advanced wrangling lecture in Step 3 introduced new concepts, including how to join relational databases. Pick three different functions, each from a different category. Describe when to use them and give one coding example along with an output for each function. To clarify, you are expected to do literate programming to weave your narratives with the code.
 
 For this section, I selected three functions from three different categories:
 
@@ -243,7 +241,7 @@ These functions solve different data-wrangling problems. `left_join()` connects 
 
 ### When to Use It
 
-`left_join()` belongs to the **mutating joins** category.
+`left_join()` belongs to the mutating joins category.
 
 I would use `left_join()` when I have one main data frame and want to add variables from another data frame using a matching key. A useful feature of `left_join()` is that it keeps all rows from the first data frame, even if some observations do not have a match in the second table.
 
@@ -289,7 +287,7 @@ A join is not only about combining two datasets. I also need to understand the r
 
 ### When to Use It
 
-`across()` belongs to the **column-wise operations** category.
+`across()` belongs to the column-wise operations category.
 
 I would use `across()` when I want to apply the same function to several columns without repeating nearly identical code.
 
@@ -334,7 +332,7 @@ In marketing analytics, `across()` could be useful for summarizing several engag
 
 ### When to Use It
 
-`case_when()` belongs to the **conditional transformation** category.
+`case_when()` belongs to the conditional transformation category.
 
 I would use `case_when()` when I need to create a new variable based on several logical conditions.
 
@@ -367,23 +365,21 @@ engagement_classified
 
 Here, R checks the conditions from top to bottom. A visitor with 120 seconds is classified as `"High"` before the more general 45-second condition is evaluated. `TRUE ~ "Low"` serves as the default category.
 
-This example helped me understand why the **order of the conditions matters**.
+This example helped me understand why the order of the conditions matters.
 
 ## Comparing the Three Functions
 
-Table @tbl-functions summarizes the different purposes of the three functions.
+Table below summarizes the different purposes of the three functions.
 
 | Function | Category | Main Purpose | Example Use |
-|------------------|------------------|------------------|------------------|
+|----|----|----|----|
 | `left_join()` | Relational data / mutating joins | Add variables from another table using a key | Combine inquiry records with source information |
 | `across()` | Column-wise operations | Apply one or more functions to multiple columns | Summarize several marketing metrics |
 | `case_when()` | Conditional transformation | Create values from multiple logical conditions | Create engagement or performance categories |
 
-: Summary of the Three Advanced Wrangling Functions
-
 # Overall Reflection
 
-This module helped me see that Quarto is not only a tool for writing reports. It can connect **analysis, presentation, documentation, and publishing**.
+This module helped me see that Quarto is not only a tool for writing reports. It can connect analysis, presentation, documentation, and publishing.
 
 The Revealjs activity showed me how code can become part of a professional presentation instead of something separate from it. I also learned that presentation design in Quarto requires both technical and communication decisions. I had to think about font size, slide density, visual structure, reproducibility, and what the audience actually needs to see.
 
@@ -400,8 +396,6 @@ My biggest takeaway from M06 is that a good analytical workflow is not only abou
 :::
 
 # Appendix
-
-## Publication Links
 
 - [Revealjs Presentation](https://sheilaaa0312.github.io/PhD-Orthodontics-AO3-Revealjs/)
 - [Revealjs GitHub Repository](https://github.com/Sheilaaa0312/PhD-Orthodontics-AO3-Revealjs)
